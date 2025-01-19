@@ -54,19 +54,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +79,120 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wraith.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blight.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bubba.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cenobite.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chucky.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clown.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deathslinger.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Demogorgon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dracula.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dredge.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Freddy Krueger.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ghost Face.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hag.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hillbilly.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Houndmaster.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huntress.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knight.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Legion.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Michael Myers.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nemesis.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nurse.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oni.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Onryo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pig.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plague.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pyramid Head.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Singularity.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skull Merchant.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spirit.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trickster.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Twins.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vecna.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wesker.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xenomorph.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artist.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
