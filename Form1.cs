@@ -40,10 +40,14 @@ namespace dbdStreakAndDataApp
             string killer;
             killer = KillerSelectionCB.SelectedItem.ToString();
             FullStreakList.Items.Add(killer);
+            fullStreakCounterLabel.Text = (int.Parse(fullStreakCounterLabel.Text) + 1).ToString();
             //if (!FullStreakList.Items.Contains(killer)) // case sensitive is not important
             //    FullStreakList.Items.Add(killer);
             if (!UniqueStreakList.Items.Contains(killer)) // case sensitive is not important
+            {
                 UniqueStreakList.Items.Add(killer);
+                uniqueStreakCounterLabel.Text = (int.Parse(uniqueStreakCounterLabel.Text) + 1).ToString();
+            }
         }
 
         private void ResetBTN_Click(object sender, EventArgs e)

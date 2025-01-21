@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ResetUniqueBTN = new System.Windows.Forms.Button();
+            this.fullStreakCounterLabel = new System.Windows.Forms.Label();
+            this.uniqueStreakCounterLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,12 +146,36 @@
             this.ResetUniqueBTN.UseVisualStyleBackColor = true;
             this.ResetUniqueBTN.Click += new System.EventHandler(this.ResetUniqueBTN_Click);
             // 
+            // fullStreakCounterLabel
+            // 
+            this.fullStreakCounterLabel.AutoSize = true;
+            this.fullStreakCounterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fullStreakCounterLabel.ForeColor = System.Drawing.Color.Red;
+            this.fullStreakCounterLabel.Location = new System.Drawing.Point(372, 460);
+            this.fullStreakCounterLabel.Name = "fullStreakCounterLabel";
+            this.fullStreakCounterLabel.Size = new System.Drawing.Size(29, 31);
+            this.fullStreakCounterLabel.TabIndex = 10;
+            this.fullStreakCounterLabel.Text = "0";
+            // 
+            // uniqueStreakCounterLabel
+            // 
+            this.uniqueStreakCounterLabel.AutoSize = true;
+            this.uniqueStreakCounterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uniqueStreakCounterLabel.ForeColor = System.Drawing.Color.Red;
+            this.uniqueStreakCounterLabel.Location = new System.Drawing.Point(591, 460);
+            this.uniqueStreakCounterLabel.Name = "uniqueStreakCounterLabel";
+            this.uniqueStreakCounterLabel.Size = new System.Drawing.Size(29, 31);
+            this.uniqueStreakCounterLabel.TabIndex = 11;
+            this.uniqueStreakCounterLabel.Text = "0";
+            // 
             // dbdStreakTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(800, 589);
+            this.Controls.Add(this.uniqueStreakCounterLabel);
+            this.Controls.Add(this.fullStreakCounterLabel);
             this.Controls.Add(this.ResetUniqueBTN);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -182,6 +208,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ResetUniqueBTN;
+        private System.Windows.Forms.Label fullStreakCounterLabel;
+        private System.Windows.Forms.Label uniqueStreakCounterLabel;
     }
 }
 
