@@ -42,6 +42,7 @@ namespace dbdStreakAndDataApp
             if (Properties.Settings.Default.FullStreakList != null)
             {
                 FullStreakList.Items.AddRange(Properties.Settings.Default.FullStreakList.ToArray());
+                UniqueStreakList.Items.AddRange(Properties.Settings.Default.UniqueStreakList.ToArray());
             }
         }
 
@@ -68,6 +69,12 @@ namespace dbdStreakAndDataApp
             {
                 UniqueStreakList.Items.Add(killer);
                 uniqueStreakCounterLabel.Text = (int.Parse(uniqueStreakCounterLabel.Text) + 1).ToString();
+                var newList1 = new ArrayList();
+
+                foreach (object item in UniqueStreakList.Items)
+                {
+                    newList1.Add(item);
+                }
             }
         }
 
@@ -80,6 +87,7 @@ namespace dbdStreakAndDataApp
         private void ResetUniqueBTN_Click(object sender, EventArgs e)
         {
             UniqueStreakList.Items.Clear();
+            Properties.Settings.Default.Reset();
         }
     }
 }
