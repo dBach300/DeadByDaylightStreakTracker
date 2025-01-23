@@ -42,7 +42,12 @@ namespace dbdStreakAndDataApp
             if (Properties.Settings.Default.FullStreakList != null)
             {
                 FullStreakList.Items.AddRange(Properties.Settings.Default.FullStreakList.ToArray());
+                fullStreakCounterLabel.Text = FullStreakList.Items.Count.ToString();
+            }
+            if (Properties.Settings.Default.UniqueStreakList != null)
+            {
                 UniqueStreakList.Items.AddRange(Properties.Settings.Default.UniqueStreakList.ToArray());
+                uniqueStreakCounterLabel.Text = UniqueStreakList.Items.Count.ToString();
             }
         }
 
@@ -75,6 +80,8 @@ namespace dbdStreakAndDataApp
                 {
                     newList1.Add(item);
                 }
+                Properties.Settings.Default.UniqueStreakList = newList1;
+                Properties.Settings.Default.Save();
             }
         }
 

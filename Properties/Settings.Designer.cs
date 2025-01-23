@@ -33,5 +33,16 @@ namespace dbdStreakAndDataApp.Properties {
                 this["FullStreakList"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Collections.ArrayList UniqueStreakList {
+            get {
+                return ((global::System.Collections.ArrayList)(this["UniqueStreakList"]));
+            }
+            set {
+                this["UniqueStreakList"] = value;
+            }
+        }
     }
 }

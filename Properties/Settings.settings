@@ -5,5 +5,8 @@
     <Setting Name="FullStreakList" Type="System.Collections.ArrayList" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="UniqueStreakList" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
