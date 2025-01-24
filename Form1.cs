@@ -89,12 +89,30 @@ namespace dbdStreakAndDataApp
         {
             FullStreakList.Items.Clear();
             Properties.Settings.Default.Reset();
+            var newList1 = new ArrayList();
+
+            foreach (object item in UniqueStreakList.Items)
+            {
+                newList1.Add(item);
+            }
+            Properties.Settings.Default.UniqueStreakList = newList1;
+            Properties.Settings.Default.Save();
+            fullStreakCounterLabel.Text = "0";
         }
 
         private void ResetUniqueBTN_Click(object sender, EventArgs e)
         {
             UniqueStreakList.Items.Clear();
             Properties.Settings.Default.Reset();
+            var newList = new ArrayList();
+
+            foreach (object item in FullStreakList.Items)
+            {
+                newList.Add(item);
+            }
+            Properties.Settings.Default.FullStreakList = newList;
+            Properties.Settings.Default.Save();
+            uniqueStreakCounterLabel.Text = "0";
         }
     }
 }
