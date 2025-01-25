@@ -73,6 +73,7 @@
             this.DiedBTN.TabIndex = 3;
             this.DiedBTN.Text = "Died";
             this.DiedBTN.UseVisualStyleBackColor = true;
+            this.DiedBTN.Click += new System.EventHandler(this.DiedBTN_Click);
             // 
             // ResetBTN
             // 

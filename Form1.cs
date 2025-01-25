@@ -114,5 +114,12 @@ namespace dbdStreakAndDataApp
             Properties.Settings.Default.Save();
             uniqueStreakCounterLabel.Text = "0";
         }
+
+        private void DiedBTN_Click(object sender, EventArgs e)
+        {
+            Form2 dataForm = new Form2();
+            dataForm.ShowDialog();
+            dataForm.Dispose();
+        }
     }
 }
